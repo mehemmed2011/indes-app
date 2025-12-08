@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Detailed - Filmalisa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./detailed.css">
+</head>
+<body>
+     
+    <div class="detailed-container">
+       <section class="hero-section">
+        <div class="movie-header">
+           <a class="logo-link" href="../../../index.html"> <img class="logo-img" src="../../../assets/icons/logo.svg" alt=""></a>
+            <ul class="movie-header-list">
+                <li class="list-item"><a class="list-link" href="../../../pages/client/home/home.html"><img src="../../../assets/icons/home-icon.svg" alt=""></a></li>
+                <li class="list-item"><a class="list-link" href="../../../pages/client/searchPanel/searchPanel.html"><img src="../../../assets/icons/search-icon.svg" alt=""></a></li>
+                <li class="list-item"><a class="list-link" href="../../../pages/client/account/account.html"><img src="../../../assets/icons/account-icon.svg" alt=""></a></li>
+                <li class="list-item"><a class="list-link" href="../../../pages/client/favorite/favorite.html"><img src="../../../assets/icons/favorite-icon.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="hero-cover">
+            <img class="hero-cover-img" src="../../../assets/images/hero-img.png" alt="">
+        </div>
+        <div class="movie-hero-info">
+            <h3 id="movie-hero-category-name">MaileHereko / Tv Shows</h3>
+            <h1 id="movie-hero-title">Lost In Space</h1>
+        </div>
+       </section>
+
+       <section class="movie-info-section">
+         <div class="movie-info-cover">
+            <img id="movie-info-cover" src="../../../assets/images/movie-info-img.png" alt="">
+            <div class="movie-cover-overlay">
+                <div class="play-icon">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+         </div>
+         <div class="movie-info-content">
+             <h1 class="movie-info-title">Dont Miss Out, Click Here!<span class="watch-link">Watch Link</span></h1>
+             <span class="add-fav-icon"><img src="../../../assets/icons/add-fav-icon.svg" alt=""></span>
+             <span class="remove-fav-icon"><i class="fa-regular fa-circle-check"></i></span>
+             <p class="movie-info-description">The mission to save Scarecrow takes an unexpected turn, throwing the Resolute into chaos. Judy hatches a plan to get a ship to Alpha Centauri.</p>
+             <span class="movie-info-rating"><img src="../../../assets/icons/movie-info-star.svg" alt="">8.1</span>
+            <div class="movie-info-items-container">
+             <div class="movie-info-item movie-info-type-container">
+                <p class="movie-info-type">Type</p>
+                <h1 class="movie-info-type-value">Tv Show</h1>
+             </div>
+             <div class="movie-info-item movie-info-status-container">
+                <p class="movie-info-status">Status</p>
+                <h1 class="movie-info-status-value">Returning Series</h1>
+             </div>
+             <div class="movie-info-item movie-info-no-of-episodes-container">
+                <p class="movie-info-no-of-episodes">No. of episodes</p>
+                <h1 class="movie-info-no-of-episodes-value">20</h1>
+             </div>
+             <div class="movie-info-item movie-info-first-air-date-container">
+                <p class="movie-info-first-air-date">First air date</p>
+                <h1 class="movie-info-first-air-date-value">2018-04-13</h1>
+             </div>
+             <div class="movie-info-item movie-info-last-air-date-container">
+                <p class="movie-info-last-air-date">Last air date</p>
+                <h1 class="movie-info-last-air-date-value">2019-04-24</h1>
+             </div>
+             <div class="movie-info-item movie-info-episode-run-time-container">
+                <p class="movie-info-episode-run-time">Episode run time</p>
+                <h1 class="movie-info-episode-run-time-value"></h1>
+             </div>
+             <div class="movie-info-item movie-info-genres-container">
+                <p class="movie-info-genres">Genres</p>
+                <h1 class="movie-info-genres-value"></h1>
+             </div>
+            </div>
+             <h1 class="movie-info-top-cost">Top cost</h1>
+             <div class="movie-info-top-cost-icons" id="actors-container">
+                <!-- Actors dinamik olaraq JavaScript ilə əlavə olunacaq -->
+             </div>
+            </div>
+       </section>
+
+       <section class="movie-comment-section">
+        <form class="comment-form">
+            <img class="profile-img" src="" alt="">
+            <input id="comment-input" type="text" placeholder="your comment...">
+            <button id="comment-btn"><img src="../../../assets/icons/comment-btn.svg" alt=""></button>
+        </form>
+        <div class="comments-container">
+            <!-- <div class="comment-item">
+                <div class="comment-content">
+                    <div class="comment-profile-info">
+                       <img class="profile-img" src="../../../assets/icons/profile-img.svg" alt="">
+                       <h1 class="comment-profile-name">John Doe</h1>
+                    </div>
+                     <div class="comment-profile-time-container">
+                           <span class="comment-profile-time">16:30 today</span>
+                    </div>
+                </div>
+                <div class="comment-text-container">
+                    <p class="comment-text">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+       <section class="similar-movies-section">
+         <h1 class="similar-movies-title">Similar Movies<span><img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+         <div class="similar-movies-cards">
+            <!-- <div class="similar-movie-card1"><img src="../../../assets/images/movie-card1.png" alt="">
+               <h3 class="movie-category-name">Sci-Fi & Fantasy</h3>
+               <div class="rating-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i> 
+                <i class="fa fa-star-o"></i> 
+              </div>
+                <h1 class="movie-title">The Dark Knight</h1>
+            </div>  -->
+         </div>
+       </section>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-modal-close">&times;</span>
+            <iframe id="videoFrame" src="" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./detailed.js"></script>
+</body>
+</html>

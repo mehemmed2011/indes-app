@@ -1,0 +1,328 @@
+.movie-container {
+    /* width: 1440px; */
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 24px;
+    background-color: #000000;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    background-color: #1E1E1E;
+}
+
+.side-bar-list .active {
+    background-color: #58209D;
+}
+
+.movie-logo {
+    display: flex;
+    align-items: center;
+    gap: 12.24px;
+    margin: 30px 0 100px 0;
+    padding-left: 47px;
+    transition: transform 0.5s ease-out;
+}
+
+.logo-img {
+    width: 39.76px;
+    height: 41.33px;
+}
+
+.logo-text {
+    font-family: 'Numans', sans-serif;
+    font-size: 20px;
+    color: #C3C8D4;
+    font-weight: 400;
+
+}
+
+.movie-logo:hover {
+    transform: scale(1.1);
+}
+
+.side-bar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: #AEAEAE;
+    font-size: 14px;
+}
+
+.side-bar-item {
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 0 12px 47px;
+    transition: background-color 0.3s ease;
+}
+
+.side-bar-link:hover {
+    color: #ffff;
+}
+
+.side-bar-item:hover {
+    background-color: #58209D;
+    color: #FFFFFF;
+}
+
+.side-bar-item-icon {
+    padding-right: 13px;
+}
+
+.side-bar-item-icon img {
+    width: 15px;
+    height: 15px;
+}
+
+.logout {
+    margin-top: 400px;
+    cursor: pointer;
+    padding-left: 47px;
+    transition: opacity 0.3s ease;
+}
+
+.logout:hover {
+    opacity: 0.5;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    flex: 2;
+    padding: 30px 75px 24px 0;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:30px 116px 24px 0px; */
+}
+
+.greeting h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+.greeting h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.admin-profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding-right: 40px;
+}
+
+
+.admin-profile img {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+
+.admin-profile {
+    cursor: pointer;
+}
+
+.admin-profile span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+
+
+/* Commnets Modals Styles */
+.comments-view-modal {
+    background-color: #171616;
+    width: 600px;
+    padding: 30px 20px 40px 20px;
+    color: #FFFFFF;
+    border-radius: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.comment-view{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.comments-delete-modal {
+    background-color: #171616;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 30px 40px 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.comments-delete-modal h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.delete-modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.comments-delete-modal .delete-btn {
+    background-color: #9B51E0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.comments-delete-modal .delete-btn:hover {
+    background-color: #7a39b3;
+}
+
+.comments-delete-modal .cancel-btn {
+    background-color: #BBBBBB;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.comments-delete-modal .cancel-btn:hover {
+    background-color: #888888;
+}
+
+
+/*Comments Table Styles*/
+
+.comments-table {
+    width: 100%;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.comments-table .comment-icon {
+    padding-right: 15px;
+}
+
+
+.head-table {
+    background-color: #1E1E1E;
+    border-radius: 4px;
+}
+
+
+.head-table th {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F2F2F2;
+    border: none;
+}
+
+.comments-table th {
+    padding: 20px;
+}
+
+.comments-table td {
+    padding: 10px;
+}
+
+.body-table {
+    color: #000000;
+    background-color: #ffff;
+}
+
+.delete-btn,
+.search-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.delete-btn i,
+.search-btn {
+    font-size: 18px;
+}
+
+/* Pagination Styles */
+.main {
+    position: relative;
+}
+
+.pagination-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-item .page-link {
+    background-color: #ffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #000000;
+}
+
+.page-item .page-link:hover {
+    background-color: #7a39b3;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.page-item {
+    color: #000000;
+    border: none;
+}
+
+.page-item.active .page-link {
+    background-color: #9B51DE !important;
+    border: 1px solid #000000;
+}

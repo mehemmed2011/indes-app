@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1D1D1D;;
+    color: #fff;
+    font-family: "Nunito Sans", "Raleway", Arial, sans-serif;
+  }
+  
+  .main-container {
+    display: flex;
+    min-height: 100vh;
+    background: #181818;
+  }
+
+  ul,
+li{
+  padding:0px !important;
+}
+  
+/*Heaader*/
+.movie-header{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding:0px 10px 0px 10px;
+  backdrop-filter: blur(7px) brightness(70%);
+}
+
+.movie-header .logo-img{
+  padding: 60px 0px 64px 0px;
+}
+
+.movie-header-list{
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+
+.movie-header-list img{
+  width:32px;
+  height: 32px;
+}
+
+.movie-header-list .list-item:hover{
+  transform: scale(0.9);
+}
+
+/*Main Section*/
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .illustration {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  .illustration img {
+    max-width: 320px;
+    width: 100%;
+  }
+  
+  .error-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .error-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8E95A9;
+    margin-bottom: 32px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .go-home-btn {
+    display: inline-block;
+    background: #a259e4;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 14px 38px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 24px 0 rgba(162, 89, 228, 0.15);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .go-home-btn:hover {
+    background: #7c3aed;
+    transform: translateY(-2px) scale(1.01);
+  }
+  
+  @media (max-width: 900px) {
+    .main-container {
+      flex-direction: column;
+    }
+    .sidebar {
+      flex-direction: row;
+      width: 100%;
+      height: 70px;
+      padding-top: 0;
+      justify-content: center;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+    .sidebar-logo {
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+    .sidebar-nav {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+      max-width: 90vw;
+    }
+    .go-home-btn {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+    .illustration img {
+      max-width: 200px;
+    }
+  }

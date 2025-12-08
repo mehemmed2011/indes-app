@@ -1,0 +1,247 @@
+.account-container {
+  display: flex;
+  min-height: 100vh;
+  background: #1D1D1D;;
+}
+
+ul,
+li{
+  padding:0px !important;
+}
+
+/*Heaader*/
+.movie-header{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding:0px 10px 0px 10px;
+  backdrop-filter: blur(7px) brightness(70%);
+}
+
+.movie-header .logo-img{
+  padding: 60px 0px 64px 0px;
+}
+
+.movie-header-list{
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+
+.movie-header-list img{
+  width:32px;
+  height: 32px;
+}
+
+.movie-header-list .list-item:hover{
+  transform: scale(0.9);
+}
+
+.movie-headerlist .list-item{
+  transition: all .3s ease;
+}
+
+.movie-header-list .list-item:hover{
+  transform: scale(0.9);
+}
+
+.movie-header-list .active{
+  filter: brightness(0) saturate(100%) invert(66%) sepia(34%) saturate(1068%) hue-rotate(162deg) brightness(92%) contrast(98%);
+}
+
+
+/*Account Section*/
+.account-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 232px;
+  height: 232px;
+  border-radius: 50%;
+  height: auto;
+  /* margin-bottom:20px; */
+  background: linear-gradient(to right, lightblue, rgb(14, 149, 176));
+}
+
+.logo img{
+  width: 232px;
+  height: 232px;
+  border-radius: 50%;
+}
+
+.client-logo-title {
+  font-family: 'Numans';
+  font-size: 70px;
+  font-weight: 400;
+  color:#C3C8D4;
+}
+
+.client-logo-text {
+  font-family: 'Nunito Sans';
+  font-size: 40px;
+  font-weight: 500;
+  color:#C3C8D4;
+}
+
+
+/* ---- Input-lar ---- */
+.client-account-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:40px;
+}
+
+.account-input {
+position: relative;
+margin-bottom: 16px;
+}
+
+.account-input img {
+position: absolute;
+width: 20px;
+height: 20px;
+top: 50%;
+transform: translateY(-50%);
+z-index: 10;
+pointer-events: none;
+}
+
+.account-input img:first-child {
+left: 12px;
+}
+
+.account-input #password-eye,
+.account-input #fullname-eye,
+.account-input #profile-img-eye {
+right: 12px;
+cursor: pointer;
+opacity: 0.7;
+transition: opacity 0.3s ease;
+pointer-events: auto;
+}
+
+.account-input #password-eye:hover,
+.account-input #fullname-eye:hover,
+.account-input #profile-img-eye:hover {
+opacity: 1;
+}
+
+#account-email,
+#account-password,
+#account-fullname,
+#account-profile-img {
+width: 547px;
+height: 64px;
+border: 1px solid #323B54;
+background-color: transparent;
+outline: none;
+border-radius: 12px;
+transition: outline 0.5s ease;
+color:#ffff;
+padding: 0px 45px 0px 45px;
+position: relative;
+z-index: 1;
+}
+
+  #account-email:-webkit-autofill,
+#account-email:-webkit-autofill:hover,
+#account-email:-webkit-autofill:focus,
+#account-email:-webkit-autofill:active,
+#account-password:-webkit-autofill,
+#account-password:-webkit-autofill:hover,
+#account-password:-webkit-autofill:focus,
+#account-password:-webkit-autofill:active,
+#account-fullname:-webkit-autofill,
+#account-fullname:-webkit-autofill:hover,
+#account-fullname:-webkit-autofill:focus,
+#account-fullname:-webkit-autofill:active,
+#account-profile-img:-webkit-autofill,
+#account-profile-img:-webkit-autofill:hover,
+#account-profile-img:-webkit-autofill:focus,
+#account-profile-img:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1D1D1D inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent !important;
+}
+
+
+#account-email::placeholder,
+#account-password::placeholder,
+#account-fullname::placeholder,
+#account-profile-img::placeholder  {
+  color: #475069;
+}
+
+#account-email:hover,
+#account-password:hover,
+#account-fullname:hover,
+#account-profile-img:hover {
+  outline: none;
+  outline: 1px solid #b264ff;
+}
+
+/* Saved state - solğun rəng */
+#account-email.saved,
+#account-password.saved,
+#account-fullname.saved,
+#account-profile-img.saved {
+  color: #475069;
+  opacity: 0.7;
+}
+
+/* Focus olduqda rəngi bərpa et */
+#account-email.saved:focus,
+#account-password.saved:focus,
+#account-fullname.saved:focus,
+#account-profile-img.saved:focus {
+  color: #ffff;
+  opacity: 1;
+}
+
+
+.account-text {
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 400;
+  color:#99A3BE;
+  text-decoration: underline;
+  align-self: self-start;
+}
+
+.account-text:hover {
+  color:#b264ff;
+}
+
+/* ---- Düymə ---- */
+#save-btn{
+  width:100%;
+  padding: 14px;
+  margin-top: 15px;
+  background-color: #9B51E0;
+  color: #ffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+
+#save-btn:hover {
+    background-color: #7a39b3;
+}

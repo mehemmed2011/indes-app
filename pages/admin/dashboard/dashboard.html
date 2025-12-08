@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="movie-container">
+        <div class="side-bar">
+            <div class="movie-logo">
+                <img class="logo-img" src="../../../assets/icons/logo.svg" alt="">
+                <span class="logo-text">filmalisa</span>
+            </div>
+            <ul class="side-bar-list">
+                <li class="side-bar-item active"><a class="side-bar-link" href="./dashboard.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/dashboard.svg"
+                            alt=""></span>Dashboard</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../movies/movies.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/movies.svg"
+                            alt=""></span>Movies</a></li>
+                <li class="side-bar-item"><a class="side-bar-link"  href="../categories/categories.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/categories.svg"
+                            alt=""></span>Categories</a></li>
+                <li class="side-bar-item"><a class="side-bar-link"  href="../users/users.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/users.svg"
+                            alt=""></span>Users</a></li>
+                <li class="side-bar-item"><a class="side-bar-link"  href="../comments/comments.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/comments.svg"
+                            alt=""></span>Comments</a></li>
+                <li class="side-bar-item"><a class="side-bar-link"  href="../contactus/contactus.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/contactus.svg"
+                            alt=""></span>Contact us</a></li>
+                <li class="side-bar-item"><a class="side-bar-link"  href="../actors/actors.html"><span class="side-bar-item-icon"><img src="../../../assets/icons/actors.svg"
+                            alt=""></span>Actors</a></li>
+            </ul>
+            <div class="logout"><img src="../../../assets/icons/logout.svg" alt=""></div>
+        </div>
+
+        <div class="main">
+            
+            <div class="top-section">
+                <div class="greeting">
+                    <h3>Hi Admin</h3>
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="admin-profile-info">
+                    <div class="admin-profile">
+                        <img class="profile-img" src="" alt="">
+                        <span class="profile-name"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row dashboard-cards">
+                    <div class="col3 dashboard-card card-1">
+                        <h1 class="dashboard-title">Favorite actions</h1>
+                         <p id="total-fav" class="dashboard-count">0</p>
+                    </div> 
+                    <div class="col3 dashboard-card">
+                          <h1 class="dashboard-title">Users</h1>
+                         <p id="total-users" class="dashboard-count">0</p>
+                    </div>
+                    <div class="col3 dashboard-card">
+                          <h1 class="dashboard-title">Movies</h1>
+                         <p id="total-movies" class="dashboard-count">0</p>
+                    </div>
+                    <div class="col3 dashboard-card">
+                          <h1 class="dashboard-title">Comments</h1>
+                         <p id="total-comments" class="dashboard-count">0</p>
+                    </div>
+                    <div class="col4 dashboard-card card-5">
+                          <h1 class="dashboard-title">Categories</h1>
+                         <p id="total-categories" class="dashboard-count">0</p>
+                    </div>
+                    <div class="col4 dashboard-card">
+                          <h1 class="dashboard-title">Actors</h1>
+                         <p id="total-actors" class="dashboard-count">0</p>
+                    </div>
+                    <div class="col4 dashboard-card">
+                          <h1 class="dashboard-title">Contacts</h1>
+                         <p id="total-contacts" class="dashboard-count">0</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>

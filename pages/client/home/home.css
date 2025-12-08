@@ -1,0 +1,426 @@
+
+.home-container {
+    background-color: #1D1D1D;
+    width:100%;
+    height: auto;
+    margin:auto;
+    padding-bottom:30px;
+}
+
+ul,
+li{
+  padding:0px !important;
+}
+
+/* Carousel Section */
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.518), rgba(0, 0, 0, 0.795)); /* şəklin qaralığı */;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+  .movie-description{
+     position: absolute;
+     top:50px;
+  }
+
+  .carousel-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    top: 150px;
+    left: 180px;
+    z-index: 100;
+    color: #FFFFFF;
+  } 
+
+  .carousel-content p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.70);
+    width: 500px;
+    padding-top: 10px;
+  }
+
+
+.carousel-item img{
+    width:100%;
+    height: 650px;
+    object-fit: cover;
+    backdrop-filter: brightness(60%);
+}
+
+.movie-header{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0px 10px 0px 10px;
+    backdrop-filter: blur(7px) brightness(70%);
+}
+
+.movie-header .logo-img{
+    padding: 60px 0px 64px 0px;
+}
+
+.movie-header-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+}
+
+.movie-header-list img{
+    width:32px;
+    height: 32px;
+}
+
+.movie-headerlist .list-item{
+    transition: all .3s ease;
+}
+
+.movie-header-list .list-item:hover{
+    transform: scale(0.9);
+  }
+
+  .movie-header-list .active{
+    filter: brightness(0) saturate(100%) invert(66%) sepia(34%) saturate(1068%) hue-rotate(162deg) brightness(92%) contrast(98%);
+  }
+
+.slider-movie-category-name{
+    /* display: inline-flex; */
+    color: rgb(97, 207, 244);
+    font-size: 14px;
+    font-weight: 400;
+    backdrop-filter: brightness(70%);
+    padding:5px 10px;
+    border-radius: 0px 5px 0px 5px;
+    /* position: absolute;
+    bottom:130px;
+    left:30px; */
+}
+
+.slider-movie-title{
+    font-size: 60px;
+    font-weight: 500;
+    color: #FFFFFF;
+    /* position: absolute;
+    bottom: 20px;
+    left:30px;
+    width:400px; */
+}
+
+.slider-rating-stars i {
+    font-size: 12px;
+    color: gold;
+    margin-right: 3px;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .slider-rating-stars i:hover {
+    color: #ffdf00;
+    transform: scale(1.2);
+  }
+  
+  .slider-rating-stars {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }  
+
+
+
+.watch-btn{
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 12px 38px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    isolation: isolate;
+}
+
+.watch-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    padding: 1px;
+    background: linear-gradient(to right, #00c6ff, #7f00ff);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+@supports not (-webkit-mask-composite: xor) {
+    .watch-btn::before {
+        background: none;
+        border: 1px solid;
+        border-image: linear-gradient(to right, #00c6ff, #7f00ff) 1;
+    }
+}
+
+.watch-btn:hover{
+  color: rgb(97, 207, 244);
+  transform: scale(1.05);
+  opacity:0.6;
+}
+
+
+/* All Movies Section*/
+
+.overlay-movies{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.539), rgba(0, 0, 0, 0.333));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fantasy-movies-section,
+.action-movies-section,
+.thriller-movies-section,
+.mystery-movies-section,
+.comedy-movies-section,
+.dram-movies-section,
+.crime-movies-section,
+.crimee-movies-section{
+    margin: 80px 60px 150px 60px;
+}
+
+.fantasy-movies-cards,
+.action-movies-cards,
+.thriller-movies-cards,
+.mystery-movies-cards,
+.comedy-movies-cards,
+.dram-movies-cards,
+.crime-movies-cards,
+.crimee-movies-cards{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+
+
+.fantasy-movies-title,
+.action-movies-title,
+.thriller-movies-title,
+.mystery-movies-title,
+.comedy-movies-title,
+.dram-movies-title,
+.crime-movies-title,
+.crimee-movies-title{
+    font-size:35px;
+    font-weight: 500;
+    color:#FFFFFF;
+    padding-left:10px;
+    padding-bottom: 30px;
+}
+
+.fantasy-movie-card1,
+.action-movie-card1,
+.thriller-movie-card1,
+.mystery-movie-card1,
+.comedy-movie-card1,
+.dram-movie-card1,
+.crime-movie-card1,
+.crimee-movie-card1{
+    position: relative;
+    cursor: pointer;
+}
+
+.fantasy-movie-card1:hover .overlay-movies,
+.action-movie-card1:hover .overlay-movies,
+.thriller-movie-card1:hover .overlay-movies,
+.mystery-movie-card1:hover .overlay-movies,
+.comedy-movie-card1:hover .overlay-movies,
+.dram-movie-card1:hover .overlay-movies,
+.crime-movie-card1:hover .overlay-movies,
+.crimee-movie-card1:hover .overlay-movies{
+    opacity: 1;
+}
+
+.fantasy-movie-card1:hover .movie-content,
+.action-movie-card1:hover .movie-content,
+.thriller-movie-card1:hover .movie-content,
+.mystery-movie-card1:hover .movie-content,
+.comedy-movie-card1:hover .movie-content,
+.dram-movie-card1:hover .movie-content,
+.crime-movie-card1:hover .movie-content,
+.crimee-movie-card1:hover .movie-content{
+    position: absolute !important;
+    bottom: 40px;
+    left:30px;
+    z-index: 100;
+}
+
+.fantasy-movie-card1 img,
+.action-movie-card1 img,
+.thriller-movie-card1 img,
+.mystery-movie-card1 img,
+.comedy-movie-card1 img,
+.dram-movie-card1 img,
+.crime-movie-card1 img,
+.crimee-movie-card1 img{
+    width:320px;
+    height: 450px;
+    flex:1;
+}
+
+
+.movie-category-name{
+    display: inline-block !important;
+    color: rgb(97, 207, 244);
+    font-size: 14px;
+    font-weight: 400;
+    backdrop-filter: brightness(70%);
+    padding:5px 10px;
+    border-radius: 0px 5px 0px 5px;
+    /* position: absolute;
+    bottom: 90px;
+    left:30px; */
+} 
+
+.movie-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    /* position: absolute;
+    bottom: 30px;
+    left:30px; */
+    width: 280px;
+}
+
+.movie-content{
+    position: absolute !important;
+    bottom: 20px;
+    left:30px;
+    transition: all 0.3s ease;
+}
+
+.rating-stars i {
+    font-size: 10px;
+    color: gold;
+    margin-right: 3px;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .rating-stars i:hover {
+    color: #ffdf00;
+    transform: scale(1.2);
+  }
+  
+  .rating-stars {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }
+
+/* YouTube Modal Styles */
+.youtube-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.youtube-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #1D1D1D;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.youtube-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s ease;
+    line-height: 1;
+}
+
+.youtube-modal-close:hover {
+    color: #00c6ff;
+}
+
+#youtubeIframe {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#youtubeIframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .youtube-modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .youtube-modal-close {
+        font-size: 30px;
+        top: 5px;
+        right: 15px;
+    }
+}

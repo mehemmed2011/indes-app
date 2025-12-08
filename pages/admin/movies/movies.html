@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./movies.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <title>Movies</title>
+</head>
+
+<body>
+    <div class="movie-container">
+        <div class="side-bar">
+            <div class="movie-logo">
+                <img class="logo-img" src="../../../assets/icons/logo.svg" alt="">
+                <span class="logo-text">filmalisa</span>
+            </div>
+            <ul class="side-bar-list">
+                <li class="side-bar-item"><a class="side-bar-link" href="../dashboard/dashboard.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/dashboard.svg"
+                                alt=""></span>Dashboard</a></li>
+                <li class="side-bar-item active"><a class="side-bar-link" href="./movies.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/movies.svg" alt=""></span>Movies</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../categories/categories.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/categories.svg"
+                                alt=""></span>Categories</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../users/users.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/users.svg" alt=""></span>Users</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../comments/comments.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/comments.svg" alt=""></span>Comments</a>
+                </li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../contactus/contactus.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/contactus.svg" alt=""></span>Contact
+                        us</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../actors/actors.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/actors.svg" alt=""></span>Actors</a></li>
+            </ul>
+            <div class="logout"><img src="../../../assets/icons/logout.svg" alt=""></div>
+        </div>
+
+        <div class="main">
+
+            <div class="top-section">
+                <div class="greeting">
+                    <h3>Hi Admin</h3>
+                    <h1>Movies</h1>
+                </div>
+                <div class="admin-profile-info">
+                    <button id="create-btn">Create</button>
+                    <div class="admin-profile">
+                        <img class="profile-img" src="" alt="">
+                        <span class="profile-name">Admin</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <table class="movie-table">
+                <thead class="head-table ">
+                    <tr>
+                        <th>ID</th>
+                        <th></th>
+                        <th>Title</th>
+                        <th>Overview</th>
+                        <th>Category</th>
+                        <th>IMDB</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody class="body-table">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td><img class="movie-icon" src="../../../assets/icons/title-movie.svg" alt=""></td>
+                        <td>Lost In Space</td>
+                        <td>A thrilling sci-fi adventure</td>
+                        <td>Sci-Fi</td>
+                        <td>8.8</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                        </td>
+                        <td>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr> -->
+
+                </tbody>
+            </table>
+
+
+            <!-- Create Modal -->
+            <div class="movies-modal">
+                <div class="modal-left">
+                    <input id="input-title" class="input" type="text" placeholder="title">
+                    <textarea id="input-overview" class="input" placeholder="overview"></textarea>
+                    <input id="input-cover" class="input" type="text" placeholder="cover url">
+                    <input id="input-fragman" class="input" type="text" placeholder="fragman(youtube embed url)">
+                    <input id="input-watch" class="input" type="text" placeholder="watch url">
+                    <input id="input-imdb" class="input" type="text" placeholder="imdb">
+                    <input id="input-runTimeMin" class="input" type="text" placeholder="run time minute">
+                    <div class="category-dropdown">
+                        <div class="selected-option">category <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="options category-options"></div>
+                    </div>
+                    <div class="actors-dropdown">
+                        <div class="selected-option">actors <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="options actors-options"></div>
+                    </div>
+                    <div class="modal-checkbox-submit">
+                        <div class="modal-checkbox">
+                            <label class="checkbox-label" for="sex">Adult</label>
+                            <input type="checkbox" id="sex">
+                        </div>
+                        <button id="btn-submit" type="button">Submit</button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <img class="modal-image" src="../../../assets/images/default.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Edit Modal -->
+            <div class="movies-edit-modal">
+                <div class="modal-left">
+                    <input id="edit-input-title" class="input" type="text" placeholder="title">
+                    <textarea id="edit-input-overview" class="input" placeholder="overview"></textarea>
+                    <input id="edit-input-cover" class="input" type="text" placeholder="cover url">
+                    <input id="edit-input-fragman" class="input" type="text" placeholder="fragman(youtube embed url)">
+                    <input id="edit-input-watch" class="input" type="text" placeholder="watch url">
+                    <input id="edit-input-imdb" class="input" type="text" placeholder="imdb">
+                    <input id="edit-input-runTimeMin" class="input" type="text" placeholder="run time minute">
+                    <div class="edit-category-dropdown">
+                        <div class="selected-option">category <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="options edit-category-options"></div>
+                    </div>
+                    <div class="edit-actors-dropdown">
+                        <div class="selected-option">actors <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="options edit-actors-options"></div>
+                    </div>
+                    <div class="modal-checkbox-submit">
+                        <div class="modal-checkbox">
+                            <label class="checkbox-label" for="edit-sex">Adult</label>
+                            <input type="checkbox" id="edit-sex">
+                        </div>
+                        <button id="btn-edit-submit">Update</button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <img class="modal-edit-image" src="../../../assets/images/default.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Delete Modal -->
+            <div class="movies-delete-modal">
+                <h3>Are you sure you want to delete this movie?</h3>
+                <div class="delete-modal-buttons">
+                    <button id="delete-movie-btn" class="delete-btn">Yes</button>
+                    <button id="cancel-movie-btn" class="cancel-btn">No</button>
+                </div>
+            </div>
+
+            <!-- Pagination.... -->
+            <nav aria-label="Movies pagination-nav">
+                <ul class="pagination pagination-lg justify-content-center mt-3"></ul>
+            </nav>
+            
+        </div>
+    </div>
+    
+    <!-- Modal Overlay -->
+    <div class="modal-overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./movies.js"></script>
+</body>
+
+</html>

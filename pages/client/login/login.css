@@ -1,0 +1,163 @@
+body {
+    background-color: #1D1D1D;;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: radial-gradient(circle at center, #141414, #000);
+    margin-top:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 249px;
+    height: 214px;
+    height: auto;
+  }
+
+  .client-logo-title {
+    font-family: 'Numans';
+    font-size: 70px;
+    font-weight: 400;
+    color:#C3C8D4;
+  }
+
+  .client-logo-text {
+    font-family: 'Nunito Sans';
+    font-size: 40px;
+    font-weight: 500;
+    color:#C3C8D4;
+  }
+  
+  
+  /* ---- Input-lar ---- */
+  .client-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.login-input {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.login-input img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.login-input img:first-child {
+  left: 12px;
+}
+
+.login-input #password-eye {
+  right: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
+}
+
+.login-input #password-eye:hover {
+  opacity: 1;
+}
+  
+#login-email,
+#login-password {
+  width: 547px;
+  height: 64px;
+  border: 1px solid #323B54;
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  transition: outline 0.5s ease;
+  color:#ffff;
+  padding: 0px 45px 0px 45px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Avtomatik doldurma üçün arxa rəngi silmək */
+#login-email:-webkit-autofill,
+#login-email:-webkit-autofill:hover,
+#login-email:-webkit-autofill:focus,
+#login-email:-webkit-autofill:active,
+#login-password:-webkit-autofill,
+#login-password:-webkit-autofill:hover,
+#login-password:-webkit-autofill:focus,
+#login-password:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1D1D1D inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent !important;
+}
+
+  
+  #login-email::placeholder,
+  #login-password::placeholder {
+    color: #475069;
+  }
+  
+  #login-email:hover,
+  #login-password:hover {
+    outline: none;
+    outline: 1px solid #b264ff;
+  }
+
+  
+  .register-text {
+    text-decoration: underline;
+    align-self: self-start;
+  }
+
+  .register-text:hover {
+    color:#b264ff;
+  }
+
+  .register-text-link {
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color:#99A3BE;
+    text-decoration: underline;
+    color:#99A3BE;
+  }
+
+  .register-text-link:hover {
+    color:#b264ff;
+  }
+  
+  /* ---- Düymə ---- */
+  #login-btn{
+    width:100%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #9B51E0;
+    color: #ffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+  
+  
+  #login-btn:hover {
+      background-color: #7a39b3;
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmalisa Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../../styles/global.css">
+  <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./contactus.css">
+</head>
+
+<body>
+
+  <div class="side-bar">
+    <div class="logo">
+      <img class="logo-img" src="../../../assets/icons/logo.svg" alt="">
+      <span class="logo-text">filmalisa</span>
+    </div>
+
+    <ul class="side-bar-list">
+      <li class="side-bar-item"><a class="side-bar-link" href="../dashboard/dashboard.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/dashboard.svg" alt=""></span>Dashboard</a></li>
+      <li class="side-bar-item"><a class="side-bar-link" href="../movies/movies.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/movies.svg" alt=""></span>Movies</a></li>
+      <li class="side-bar-item"><a class="side-bar-link" href="../categories/categories.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/categories.svg" alt=""></span>Categories</a></li>
+      <li class="side-bar-item"><a class="side-bar-link" href="../users/users.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/users.svg" alt=""></span>Users</a></li>
+      <li class="side-bar-item"><a class="side-bar-link" href="../comments/comments.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/comments.svg" alt=""></span>Comments</a></li>
+      <li class="side-bar-item active"><a class="side-bar-link" href="./contactus.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/contactus.svg" alt=""></span>Contact us</a></li>
+      <li class="side-bar-item"><a class="side-bar-link" href="../actors/actors.html"><span
+            class="side-bar-item-icon"><img src="../../../assets/icons/actors.svg" alt=""></span>Actors</a></li>
+    </ul>
+
+    <div class="logout"><img src="../../../assets/icons/logout.svg" alt=""></div>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h3>Hi Admin<br><span>Contact us</span></h3>
+      <div class="profile">
+        <img src="" class="profile-img" alt="Admin">
+        <p class="profile-name"></p>
+      </div>
+    </div>
+
+    <table class="contactus-table">
+      <thead class="head-table">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Reason</th>
+          <th>View</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody class="body-table">
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>john.doe@example.com</td>
+          <td>This is a sample reason.</td>
+          <td>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </td>
+          <td>
+            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+            <!-- Contact us View Modal-->
+            <div class="contactus-view-modal">  
+                <p class="contactus-view"></p>
+          </div>
+
+            <!--Contact us Delete Modal-->
+          <div class="contactus-delete-modal">
+                  <h3>Are you sure you want to delete this contact us?</h3>
+                  <div class="delete-modal-buttons">
+                      <button id="delete-contactus-btn" class="delete-btn">Yes</button>
+                      <button id="cancel-contactus-btn" class="cancel-btn">No</button>
+                  </div>
+          </div>
+
+          <!-- Pagination.... -->
+            <nav class="pagination-nav" aria-label="Contact us pagination-nav">
+              <ul class="pagination pagination-lg justify-content-center mt-3"></ul>
+          </nav> 
+  </div>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay"></div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./contactus.js"></script>
+</body>
+
+</html>

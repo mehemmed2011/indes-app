@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./home.css">
+    <title>Home - Filmalisa</title>
+
+</head>
+<body>
+    
+    <div class="home-container">
+        <section class="hero-section">
+         <div class="movie-header">
+             <a class="logo-link" href="../../../index.html"> <img class="logo-img" src="../../../assets/icons/logo.svg" alt=""></a>
+             <ul class="movie-header-list">
+                 <li class="list-item active"><a class="list-link" href="../../../pages/client/home/home.html"><img src="../../../assets/icons/home-icon.svg" alt=""></a></li>
+                 <li class="list-item"><a class="list-link" href="../../../pages/client/searchPanel/searchPanel.html"><img src="../../../assets/icons/search-icon.svg" alt=""></a></li>
+                 <li class="list-item"><a class="list-link" href="../../../pages/client/account/account.html"><img src="../../../assets/icons/account-icon.svg" alt=""></a></li>
+                 <li class="list-item"><a class="list-link" href="../../../pages/client/favorite/favorite.html"><img src="../../../assets/icons/favorite-icon.svg" alt=""></a></li>
+             </ul>
+         </div>
+         <div class="hero-cover">
+            <div id="myCarousel"  class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <!-- carousel items will be added here -->
+                </div>
+              </div>
+         </div>
+
+        
+        </section>
+ 
+        <section class="fantasy-movies-section">
+          <h1 class="fantasy-movies-title">Fantasy Movies<span>
+            <img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+          <div class="fantasy-movies-cards">
+            <!-- movies will be added here -->
+          </div>
+        </section>
+
+        <section class="action-movies-section">
+          <h1 class="action-movies-title">Action Movies<span>
+            <img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+          <div class="action-movies-cards">
+            <!-- movies will be added here -->
+          </div>
+        </section>
+        
+          <section class="thriller-movies-section ">
+          <h1 class="thriller-movies-title">Thriller Movies<span>
+            <img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+          <div class="thriller-movies-cards">
+            <!-- movies will be added here -->
+          </div>
+        </section>
+
+        <section class="mystery-movies-section ">
+          <h1 class="mystery-movies-title">Mystery Movies<span>
+            <img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+          <div class="mystery-movies-cards">
+            <!-- movies will be added here -->
+          </div>
+        </section>
+
+        <section class="comedy-movies-section ">
+          <h1 class="comedy-movies-title">Comedy Movies<span>
+            <img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+          <div class="comedy-movies-cards">
+            <!-- movies will be added here -->
+          </div>
+        </section>
+
+        <section class="dram-movies-section ">
+          <h1 class="dram-movies-title">Dram Movies<span>
+            <img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+          <div class="dram-movies-cards">
+            <!-- movies will be added here -->
+          </div>
+        </section>
+     </div>
+
+     <!-- YouTube Video Modal -->
+     <div id="youtubeModal" class="youtube-modal">
+        <div class="youtube-modal-content">
+            <span class="youtube-modal-close">&times;</span>
+            <div id="youtubeIframe">
+                <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./home.js"></script>
+</body>
+</html>

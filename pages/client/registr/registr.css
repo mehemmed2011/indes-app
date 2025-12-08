@@ -1,0 +1,172 @@
+body {
+    background-color: #1D1D1D;;
+    height: 100vh;
+  }
+  
+  .registr-container {
+    background-color: radial-gradient(circle at center, #141414, #000);
+    margin-top:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 249px;
+    height: 214px;
+    height: auto;
+  }
+
+  .client-logo-title {
+    font-family: 'Numans';
+    font-size: 70px;
+    font-weight: 400;
+    color:#C3C8D4;
+  }
+
+  .client-logo-text {
+    font-family: 'Nunito Sans';
+    font-size: 40px;
+    font-weight: 500;
+    color:#C3C8D4;
+  }
+  
+  
+  /* ---- Input-lar ---- */
+  .client-registr-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.registr-input {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.registr-input img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.registr-input img:first-child {
+  left: 12px;
+}
+
+.registr-input #password-eye,
+.registr-input #fullname-eye {
+  right: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
+}
+
+.registr-input #password-eye:hover,
+.registr-input #fullname-eye:hover {
+  opacity: 1;
+}
+  
+#registr-email,
+#registr-password,
+#registr-fullname {
+  width: 547px;
+  height: 64px;
+  border: 1px solid #323B54;
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  transition: outline 0.5s ease;
+  color:#ffff;
+  padding: 0px 45px 0px 45px;
+  position: relative;
+  z-index: 1;
+}
+
+#registr-email:-webkit-autofill,
+#registr-email:-webkit-autofill:hover,
+#registr-email:-webkit-autofill:focus,
+#registr-email:-webkit-autofill:active,
+#registr-password:-webkit-autofill,
+#registr-password:-webkit-autofill:hover,
+#registr-password:-webkit-autofill:focus,
+#registr-password:-webkit-autofill:active,
+#registr-fullname:-webkit-autofill,
+#registr-fullname:-webkit-autofill:hover,
+#registr-fullname:-webkit-autofill:focus,
+#registr-fullname:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1D1D1D inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent !important;
+}
+
+  
+  #registr-email::placeholder,
+  #registr-password::placeholder,
+  #registr-fullname::placeholder {
+    color: #475069;
+  }
+  
+  #registr-email:hover,
+  #registr-password:hover,
+  #registr-fullname:hover {
+    outline: none;
+    outline: 1px solid #b264ff;
+  }
+
+  
+  .login-text {
+    align-self: self-start;
+    text-decoration: underline;
+  }
+
+  .login-text:hover {
+    color:#b264ff;
+  }
+
+  .login-text-link {
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color:#99A3BE;
+    text-decoration: underline;
+    color:#99A3BE;
+    align-self: self-start;
+  }
+
+  .login-text-link:hover {
+    color:#b264ff;
+  }
+  
+  /* ---- Düymə ---- */
+  #registr-btn{
+    width:100%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #9B51E0;
+    color: #ffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+  
+  
+  #registr-btn:hover {
+      background-color: #7a39b3;
+  }

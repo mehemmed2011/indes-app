@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Favorite - Filmalisa</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="./favorite.css">
+</head>
+<body>
+    <div class="favorite-container">
+        <div class="movie-header">
+            <a class="logo-link" href="../../../index.html"> <img class="logo-img" src="../../../assets/icons/logo.svg" alt=""></a>
+            <ul class="movie-header-list">
+                <li class="list-item"><a class="list-link" href="../../../pages/client/home/home.html"><img src="../../../assets/icons/home-icon.svg" alt=""></a></li>
+                <li class="list-item"><a class="list-link" href="../../../pages/client/searchPanel/searchPanel.html"><img src="../../../assets/icons/search-icon.svg" alt=""></a></li>
+                <li class="list-item"><a class="list-link" href="../../../pages/client/account/account.html"><img src="../../../assets/icons/account-icon.svg" alt=""></a></li>
+                <li class="list-item active"><a class="list-link" href="../../../pages/client/favorite/favorite.html"><img src="../../../assets/icons/favorite-icon.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <section class="favorite-movies-section">
+            <h1 class="favorite-movies-title">Favorite Movies<span><img src="../../../assets/icons/similar-arrow-icon.svg" alt=""></span></h1>
+            <div class="favorite-movies-cards">
+                <!-- <div class="favorite-movie-card1"><img src="../../../assets/images/movie-card1.png" alt="">
+                    <h3 class="movie-category-name">Sci-Fi & Fantasy</h3>
+                    <div class="rating-stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-alt"></i> 
+                      <i class="fa fa-star-o"></i> 
+                    </div>
+                     <h1 class="movie-title">The Dark Knight</h1>
+                 </div> -->
+               <!-- Favorite movies will be loaded dynamically -->
+            </div>
+          </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./favorite.js"></script>
+</body>
+</html>

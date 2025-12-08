@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./users.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <title>Users</title>
+</head>
+
+<body>
+    <div class="movie-container">
+        <div class="side-bar">
+            <div class="movie-logo">
+                <img class="logo-img" src="../../../assets/icons/logo.svg" alt="">
+                <span class="logo-text">filmalisa</span>
+            </div>
+            <ul class="side-bar-list">
+                <li class="side-bar-item"><a class="side-bar-link" href="../dashboard/dashboard.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/dashboard.svg"
+                                alt=""></span>Dashboard</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../movies/movies.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/movies.svg" alt=""></span>Movies</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../categories/categories.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/categories.svg"
+                                alt=""></span>Categories</a></li>
+                <li class="side-bar-item active"><a class="side-bar-link" href="./users.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/users.svg" alt=""></span>Users</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../comments/comments.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/comments.svg" alt=""></span>Comments</a>
+                </li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../contactus/contactus.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/contactus.svg" alt=""></span>Contact
+                        us</a></li>
+                <li class="side-bar-item"><a class="side-bar-link" href="../actors/actors.html"><span
+                            class="side-bar-item-icon"><img src="../../../assets/icons/actors.svg" alt=""></span>Actors</a></li>
+            </ul>
+            <div class="logout"><img src="../../../assets/icons/logout.svg" alt=""></div>
+        </div>
+
+        <div class="main">
+            <div class="top-section">
+                <div class="greeting">
+                    <h3>Hi Admin</h3>
+                    <h1>Users</h1>
+                </div>
+                <div class="admin-profile-info">
+                    <div class="admin-profile">
+                        <img class="profile-img" src="" alt="">
+                        <span class="profile-name"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--USERS TABLE-->
+            <table class="users-table ">
+                <thead class="head-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody class="body-table">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john.doe@example.com</td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+            <!--Pagination-->
+            <nav class="pagination-nav" aria-label="Movies pagination-nav">
+                <ul class="pagination pagination-lg justify-content-center mt-3"></ul>
+            </nav>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./users.js"></script>
+</body>
+
+</html>

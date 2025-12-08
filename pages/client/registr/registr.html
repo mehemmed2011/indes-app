@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Registration - Filmalisa</title>
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="registr.css">
+</head>
+<body>
+
+    <div class="registr-container">
+        <div class="logo">
+          <img src="../../../assets//icons/logo.svg" class="logo" alt="logo" />
+          <h2 class="client-logo-title">filmalisa</h2>
+        </div>
+        <form id="client-registr-form" class="client-registr-form" action="">
+            <p class="client-logo-text">Register</p>
+            <div class="registr-input">
+                <img id="fullname-icon" src="../../../assets/icons/key.svg" alt="">
+                <img id="fullname-eye" src="../../../assets/icons/password-eye.svg" alt="fullname-eye">
+                <input id="registr-fullname" type="text" placeholder="full name" required />
+              </div>
+          <div class="registr-input">
+            <img src="../../../assets/icons/letter.svg" alt="">
+                <input id="registr-email" type="email" placeholder="email" required />
+          </div>
+          <div class="registr-input">
+            <img id="password-icon" src="../../../assets/icons/key.svg" alt="">
+            <img id="password-eye" src="../../../assets/icons/password-eye.svg" alt="password-eye">
+            <input id="registr-password" type="password" placeholder="password" required />
+          </div>
+          <p class="login-text"><a class="login-text-link" href="../login/login.html">Do you have an account? Login here</a></p>
+          <button id="registr-btn" type="submit">Register</button>
+        </form>
+      </div>
+    
+
+    <script src="../../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./registr.js"></script>
+</body>
+</html>
